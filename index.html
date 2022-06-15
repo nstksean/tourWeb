@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="App">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <link   rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+<div class="navBar">
+    <div class="FunTitle">HaveFun</div>
+    <div class="navSerch"><i> # Explore your own activities</i></div>
+</div>
+<div class="workSpace">
+    <div class="filterContainer">
+        <div class="filterLocation bg_gray">
+            <div class="filterTitle">
+                <label for="loca">Location</label>
+            </div>
+            <div class="filterLocationList">
+                <select name="loca" id="loca">
+                <option value="Taiwan">Taiwan</option>
+                <option value="Kaoshiung">Kaoshiung</option>
+                <option value="Taipei">Taipei</option>
+                <option value="Taichung">Taichung</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="filterLocation bg_gray"> 
+
+            <div class="filterTitle">Date</div>
+            
+            <div class="DateFromTo" id="dateFrom">
+                <div class="textfrom"><label for="dateFrom">form</label></div>
+
+                <div><input type="date" name="dateFrom"></div>
+              
+            </div>
+            
+            <div class="DateFromTo" id="dateto">
+                <div class="textto"><label for="dateto">to </label></div>
+                <div><input type="date" name="dateto"></div>
+              
+            </div>
+            
+        </div>
+        <div class="filterLocation bg_gray">
+            <div class="filterTitle">Categories</div>
+            <div class="CateList">
+                <div class="listItem"><ul>
+                    <li><input type="checkbox" id="all" >
+                    <label for="all">all</label></li>
+                    <li><input type="checkbox" id="ent" >
+                    <label for="Ent">Entertainment</label></li>
+                    <li><input type="checkbox" id="food" >
+                    <label for="food">Food</label></li>
+                    <li><input type="checkbox" id="learn" >
+                    <label for="learn">Learning</label></li>
+                    <li><input type="checkbox" id="outdoor" >
+                    <label for="outdoor">outdoor</label></li>    
+                    </ul></div>
+            </div>        
+        </div>
+    </div>
+    <div class="viewContainer">
+        <div class="serchResult">Showing &nbsp; <span> 15 </span> &nbsp; results by…</div>
+        <div class="tagContainer">
+        <div class="tagBtn"> Koahsiung X</div>
+        <div class="tagBtn"> Entertainment X</div>
+        </div>
+        <div class="viewCard">
+            <div class="viewCardImg">img</div>
+            <div class="cardContent">
+                <div class="cardTitle">Kogi Cosby sweater.</div>
+                <div class="cardText">Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo.</div>
+                <div class="cardAuthor">Ethan Foster</div>
+                <div class="cardTag">Entertainment</div>
+                <div class="cardDetail">Kaohsiung City 2018/5/24 - 2018/5/31</div>
+            </div>  
+    </div>
+    <div class="viewCardPageBtn"></div>
+    <button>«</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>»</button>        
+    </div>
+
+</div>
+</body>
+<script src="main.js"></script>
+</html>
